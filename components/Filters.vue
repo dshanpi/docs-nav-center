@@ -6,41 +6,92 @@
     variant="ghost"
     :multiple="true"
   >
-    <template #mainFeatures>
+    <template #chipTypes>
       <div class="ml-2 flex flex-col gap-1">
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FStyled" />
-          <FilterButton buttonFilterID="FUnstyled" />
+          <FilterButton buttonFilterID="FMPU" />
+          <FilterButton buttonFilterID="FMCU" />
         </div>
 
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FImported" />
-          <FilterButton buttonFilterID="FPasted" />
+          <FilterButton buttonFilterID="FLinux" />
+          <FilterButton buttonFilterID="FDriver" />
         </div>
 
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FComponents" />
-          <FilterButton buttonFilterID="FCSS" />
+          <FilterButton buttonFilterID="FGUI" />
+          <FilterButton buttonFilterID="FSystem" />
         </div>
 
-        <FilterButton buttonFilterID="FTailwind" />
-        <FilterButton buttonFilterID="FFree" />
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FDevelopment" />
+          <FilterButton buttonFilterID="FHardware" />
+        </div>
       </div>
     </template>
 
-    <template #moreFeatures>
+    <template #linuxBoards>
       <div class="ml-2 flex flex-col gap-1">
-        <FilterButton buttonFilterID="FAccessible" />
-        <FilterButton buttonFilterID="FBuiltinThemes" />
-        <FilterButton buttonFilterID="FThemeGenerator" />
-        <FilterButton buttonFilterID="FDarkMode" />
-        <FilterButton buttonFilterID="FSemanticColors" />
-        <FilterButton buttonFilterID="FFigma" />
-        <FilterButton buttonFilterID="FOfficial" />
-        <FilterButton buttonFilterID="FRoadmap" />
-        <FilterButton buttonFilterID="FRTLSupport" />
-        <FilterButton buttonFilterID="FTyped" />
-        <FilterButton buttonFilterID="FForm" />
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="F100ASK_V853_PRO" />
+          <FilterButton buttonFilterID="FSTM32MP157_PRO" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FSTM32F103_PRO" />
+          <FilterButton buttonFilterID="FIMX6ULL_PRO" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FIMX6ULL_MINI" />
+          <FilterButton buttonFilterID="FDshanPI_One" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FDshanPI_PicoW" />
+          <FilterButton buttonFilterID="FDshanPIxCanMV" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FDshanPI_Vision" />
+        </div>
+      </div>
+    </template>
+
+    <template #chipVendors>
+      <div class="ml-2 flex flex-col gap-1">
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FAllwinner" />
+          <FilterButton buttonFilterID="FRockchip" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FCanaan" />
+          <FilterButton buttonFilterID="FSTM32" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FRenesas" />
+          <FilterButton buttonFilterID="FEsp32" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FNXP" />
+          <FilterButton buttonFilterID="FSigmastar" />
+        </div>
+      </div>
+    </template>
+
+    <template #specializedTech>
+      <div class="ml-2 flex flex-col gap-1">
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FAI" />
+          <FilterButton buttonFilterID="FDriver" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FSystem" />
+        </div>
       </div>
     </template>
 
@@ -72,22 +123,32 @@
 <script setup lang="ts">
 const accordionSections = [
   {
-    label: "Main Features",
+    label: "系统类型",
     defaultOpen: true,
-    slot: "mainFeatures",
+    slot: "chipTypes",
   },
   {
-    label: "More Features",
+    label: "Linux开发板",
     defaultOpen: true,
-    slot: "moreFeatures",
+    slot: "linuxBoards",
   },
   {
-    label: "Available Components",
+    label: "芯片厂商",
+    defaultOpen: true,
+    slot: "chipVendors",
+  },
+  {
+    label: "专用技术",
+    defaultOpen: true,
+    slot: "specializedTech",
+  },
+  {
+    label: "可用组件",
     defaultOpen: true,
     slot: "availableComponents",
   },
   {
-    label: "Popularity",
+    label: "热门程度",
     defaultOpen: true,
     slot: "popularity",
   },

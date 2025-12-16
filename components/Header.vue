@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between px-4 py-2 md:px-8">
       <div class="hidden h-12 items-center gap-2 md:flex">
         <img class="size-8" src="/public/favicon/newlogo.svg" />
-        <h1 class="text-xl font-bold">UI Lib Picker</h1>
+        <h1 class="text-xl font-bold">Docs Center</h1>
       </div>
       <div class="md:invisible">
         <UButton
@@ -34,13 +34,6 @@
         />
 
         <ThemeSelector />
-
-        <UButton
-          icon="i-material-symbols-account-circle-outline"
-          :square="true"
-          :to="appConfig.myWebsiteUrl"
-          target="_blank"
-        />
       </div>
     </div>
   </div>

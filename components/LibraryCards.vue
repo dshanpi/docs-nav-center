@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import { libraries } from "@/data/libraries"
+import { docs100askSites as libraries } from "@/data/docs-100ask"
 </script>

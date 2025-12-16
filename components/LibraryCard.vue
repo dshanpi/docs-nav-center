@@ -24,6 +24,12 @@
               <p class="font-medium tracking-wide">{{ library.name }}</p>
             </UButton>
           </UTooltip>
+          
+          <!-- 文档介绍 -->
+          <div v-if="library.description" class="mt-2 text-xs text-gray-600 dark:text-gray-400 max-w-[180px]">
+            {{ library.description }}
+          </div>
+          
           <div v-if="library.onTopOf" class="-mt-0.5 flex items-center gap-x-1 text-xs">
             <UIcon name="i-ph-stack-simple"></UIcon>
             <div>built on {{ library.onTopOf }}</div>
@@ -62,12 +68,12 @@
           </UTooltip>
         </div>
         <div class="mr-2">
-          <UTooltip text="Browse all available components">
+          <UTooltip text="浏览所有内容分类">
             <UButton
               @click="isComponentPanelOpen = true"
               icon="i-heroicons-square-3-stack-3d"
               size="xl"
-              :label="`${nbComponents} components`"
+              :label="`所有页面分类`"
               variant="ghost"
               color="primary"
             />

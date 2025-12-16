@@ -7,26 +7,26 @@
     <UContainer class="pb-6">
       <div class="mt-6 text-center sm:my-12">
         <p class="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Pick the right UI Library
+          百问网文档站点导航
         </p>
         <p class="text-lg sm:text-xl">
-          for your
+          选择适合你的
           <NuxtLink
-            to="https://vuejs.org/"
+            to="https://docs.100ask.net/"
             target="_blank"
             class="primary-text font-semibold"
           >
-            Vue 3
+            嵌入式开发
           </NuxtLink>
-          or
+          或
           <NuxtLink
-            to="https://nuxt.com/"
+            to="https://100ask.net/"
             target="_blank"
             class="primary-text font-semibold"
           >
-            Nuxt 3/4
+            AI开发
           </NuxtLink>
-          Project.
+          文档站点
         </p>
       </div>
 
@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-const title = ref("UI Lib Picker")
+const title = ref("百问网文档站点导航")
 
 const runtimeConfig = useRuntimeConfig()
 const loadPlausible = runtimeConfig.public.loadPlausible == "yes"
@@ -53,7 +53,7 @@ useHead({
   title,
 
   // helps for accessibility - remove if using i18n
-  htmlAttrs: { lang: "en" },
+  htmlAttrs: { lang: "zh" },
 
   // favicon
   link: [
@@ -70,7 +70,7 @@ useHead({
         script: [
           {
             "src": "https://pl.v1v2.io/js/script.js",
-            "data-domain": "ui-libs.vercel.app",
+            "data-domain": "docs-100ask.net",
             "defer": true,
           },
         ],
@@ -79,7 +79,7 @@ useHead({
 })
 
 // Meta tags, OG, Twitter
-const description = "🎨 Pick the Right UI Library for your Vue 3 or Nuxt 3/4 Project"
+const description = "📚 百问网文档站点导航 - 嵌入式开发、AI开发、各系列芯片开发板文档汇总"
 useSeoMeta({
   title: title.value,
   description: description,
@@ -87,8 +87,8 @@ useSeoMeta({
   ogDescription: description,
   ogType: "website",
   ogSiteName: title.value,
-  ogUrl: "https://ui-libs.vercel.app/",
-  ogImage: "https://ui-libs.vercel.app/img/social_small.png",
+  ogUrl: "https://docs-100ask.net/",
+  ogImage: "https://docs-100ask.net/img/social_small.png",
   ogImageWidth: "1142",
   ogImageHeight: "760",
 })

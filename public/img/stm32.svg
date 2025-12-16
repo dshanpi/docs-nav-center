@@ -1,0 +1,11 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="8" fill="#03234B"/>
+  <path d="M8 14h32v20H8z" fill="white" opacity="0.9"/>
+  <rect x="10" y="16" width="28" height="16" rx="2" fill="#03234B"/>
+  <circle cx="16" cy="22" r="2" fill="white"/>
+  <circle cx="24" cy="22" r="2" fill="white"/>
+  <circle cx="32" cy="22" r="2" fill="white"/>
+  <rect x="12" y="26" width="24" height="2" rx="1" fill="#03234B"/>
+  <rect x="14" y="30" width="20" height="2" rx="1" fill="#03234B"/>
+  <text x="24" y="40" text-anchor="middle" fill="white" font-size="8" font-weight="bold">STM32</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="8" fill="#00979D"/>
+  <path d="M6 20h36v8H6z" fill="white" opacity="0.9"/>
+  <rect x="8" y="22" width="32" height="4" rx="2" fill="#00979D"/>
+  <rect x="12" y="18" width="2" height="12" rx="1" fill="white"/>
+  <rect x="16" y="18" width="2" height="12" rx="1" fill="white"/>
+  <rect x="20" y="18" width="2" height="12" rx="1" fill="white"/>
+  <rect x="24" y="18" width="2" height="12" rx="1" fill="white"/>
+  <rect x="28" y="18" width="2" height="12" rx="1" fill="white"/>
+  <rect x="32" y="18" width="2" height="12" rx="1" fill="white"/>
+  <rect x="36" y="18" width="2" height="12" rx="1" fill="white"/>
+  <rect x="12" y="26" width="24" height="1" rx="0.5" fill="white"/>
+  <rect x="12" y="28" width="20" height="1" rx="0.5" fill="white"/>
+  <text x="24" y="38" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Arduino</text>
+</svg>
