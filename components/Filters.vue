@@ -9,23 +9,43 @@
     <template #chipTypes>
       <div class="ml-2 flex flex-col gap-1">
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FMPU" />
-          <FilterButton buttonFilterID="FMCU" />
+          <FilterButton buttonFilterID="FLinux49" />
+          <FilterButton buttonFilterID="FLinux5x" />
         </div>
 
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FLinux" />
-          <FilterButton buttonFilterID="FDriver" />
+          <FilterButton buttonFilterID="FLinux6x" />
+          <FilterButton buttonFilterID="FFreeRTOS" />
         </div>
 
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FGUI" />
-          <FilterButton buttonFilterID="FSystem" />
+          <FilterButton buttonFilterID="FRtThread" />
+          <FilterButton buttonFilterID="FKeil" />
         </div>
 
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FDevelopment" />
-          <FilterButton buttonFilterID="FHardware" />
+          <FilterButton buttonFilterID="FVSCode" />
+          <FilterButton buttonFilterID="FOpenWrt" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FUbuntu24" />
+          <FilterButton buttonFilterID="FArmbian" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FOpenVela" />
+          <FilterButton buttonFilterID="FNuttX" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FZephyr" />
+          <FilterButton buttonFilterID="FAndroid" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="FBuildroot" />
+          <FilterButton buttonFilterID="FYocto" />
         </div>
       </div>
     </template>
@@ -33,27 +53,83 @@
     <template #linuxBoards>
       <div class="ml-2 flex flex-col gap-1">
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="F100ASK_V853_PRO" />
-          <FilterButton buttonFilterID="FSTM32MP157_PRO" />
+          <FilterButton buttonFilterID="Fhpm6e" />
+          <FilterButton buttonFilterID="Fra6m5" />
         </div>
 
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FSTM32F103_PRO" />
-          <FilterButton buttonFilterID="FIMX6ULL_PRO" />
+          <FilterButton buttonFilterID="Fr128s2" />
+          <FilterButton buttonFilterID="Fimx6ull" />
         </div>
 
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FIMX6ULL_MINI" />
-          <FilterButton buttonFilterID="FDshanPI_One" />
+          <FilterButton buttonFilterID="Fstm32mp157" />
+          <FilterButton buttonFilterID="Fstm32mp135" />
         </div>
 
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FDshanPI_PicoW" />
-          <FilterButton buttonFilterID="FDshanPIxCanMV" />
+          <FilterButton buttonFilterID="Fstm32f103" />
+          <FilterButton buttonFilterID="Fstm32h5" />
         </div>
 
         <div class="grid grid-cols-2 gap-1">
-          <FilterButton buttonFilterID="FDshanPI_Vision" />
+          <FilterButton buttonFilterID="Fstm32h7r" />
+          <FilterButton buttonFilterID="Fv853" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Fv851s" />
+          <FilterButton buttonFilterID="Fv851se" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Ft113s3" />
+          <FilterButton buttonFilterID="Ft113s4" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Ft113i" />
+          <FilterButton buttonFilterID="Fd1h" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Fd1s" />
+          <FilterButton buttonFilterID="Ff133" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Frk3568" />
+          <FilterButton buttonFilterID="Frk3576" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Fssd210" />
+          <FilterButton buttonFilterID="Fssd202d" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Fr818" />
+          <FilterButton buttonFilterID="Fa133" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Fk230" />
+          <FilterButton buttonFilterID="Fk510" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Fv821" />
+          <FilterButton buttonFilterID="Fv821b" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Fv861" />
+          <FilterButton buttonFilterID="Ft153m3" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-1">
+          <FilterButton buttonFilterID="Ft153mx" />
+          <FilterButton buttonFilterID="Ft527" />
         </div>
       </div>
     </template>
@@ -128,7 +204,7 @@ const accordionSections = [
     slot: "chipTypes",
   },
   {
-    label: "Linux开发板",
+    label: "芯片型号",
     defaultOpen: true,
     slot: "linuxBoards",
   },

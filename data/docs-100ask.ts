@@ -19,11 +19,11 @@ export const docs100askSites: Array<Library> = [
       "常见问题",
     ],
     filterMatchings: [
-      { id: "FMPU" },
-      { id: "FAllwinner" },
-      { id: "FLinux" },
-      { id: "FDriver" },
-      { id: "FDevelopment" },
+      { id: "FLinux5x" },
+      { id: "FArmbian" },
+      { id: "FUbuntu24" },
+      { id: "FOpenWrt" },
+      { id: "Ft527" },
     ],
   },
   {
