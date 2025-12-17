@@ -26,7 +26,7 @@
             color="gray"
           />
         </div>
-        <div class="flex flex-wrap gap-2">
+        <div class="grid grid-cols-2 gap-2">
           <div
             v-for="item in getCategoryDescription(category)"
             :key="item"

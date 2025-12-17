@@ -24,21 +24,24 @@
               <p class="font-medium tracking-wide">{{ library.name }}</p>
             </UButton>
           </UTooltip>
-          
+
           <!-- 文档介绍 -->
-          <div v-if="library.description" class="mt-2 text-xs text-gray-600 dark:text-gray-400 max-w-[180px]">
+          <div
+            v-if="library.description"
+            class="mt-2 max-w-[180px] text-xs text-gray-600 dark:text-gray-400"
+          >
             {{ library.description }}
           </div>
-          
+
           <div v-if="library.onTopOf" class="-mt-0.5 flex items-center gap-x-1 text-xs">
             <UIcon name="i-ph-stack-simple"></UIcon>
             <div>built on {{ library.onTopOf }}</div>
           </div>
         </div>
 
-        <div class="flex flex-wrap place-content-end gap-2">
+        <div class="grid grid-cols-2 place-content-end gap-2">
           <template v-for="buttonFilter in buttonFiltersToShow" :key="buttonFilter.id">
-            <LibraryCardBadge class="w-28" :buttonFilter="buttonFilter" />
+            <LibraryCardBadge class="w-full" :buttonFilter="buttonFilter" />
           </template>
         </div>
       </div>
